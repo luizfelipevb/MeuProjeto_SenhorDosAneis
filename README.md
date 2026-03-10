@@ -1,2 +1,2 @@
-# MeuProjeto_SenhorDosAneis
-Feito por mim
+# Projeto_SenhorDosAneis
+Site sobre essa saga cinematografica
