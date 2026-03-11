@@ -1,7 +1,17 @@
 .titulo_principal{
     background-color: darkgoldenrod;
     color: white;
+display: flex;
+    flex-direction: column;   /* Empilha o h1 e o h3 */
+    justify-content: center;  /* Centraliza verticalmente (no meio da altura) */
+    align-items: center;      /* Centraliza horizontalmente */
+    min-height: 150px;        /* Altura mínima do bloco (ajuste conforme o gosto) */
     text-align: center;
+    line-height: 1; /* Isso aumenta o espaço vertical de cada linha de texto */
+    padding-top: 30px;
+    -webkit-text-stroke: 2px black;  /* Espessura e Cor do contorno */
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid black;    /* A borda preta em volta de tudo */
 }
 .Titulo_segundario{
     background-color: rgb(34, 81, 10);
