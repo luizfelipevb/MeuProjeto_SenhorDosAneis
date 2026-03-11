@@ -1,31 +1,90 @@
-.titulo_principal{
-    background-color: darkgoldenrod;
-    color: white;
-display: flex;
-    flex-direction: column;   /* Empilha o h1 e o h3 */
-    justify-content: center;  /* Centraliza verticalmente (no meio da altura) */
-    align-items: center;      /* Centraliza horizontalmente */
-    min-height: 150px;        /* Altura mínima do bloco (ajuste conforme o gosto) */
-    text-align: center;
-    line-height: 1; /* Isso aumenta o espaço vertical de cada linha de texto */
-    padding-top: 30px;
-    -webkit-text-stroke: 2px black;  /* Espessura e Cor do contorno */
-    font-family: Arial, Helvetica, sans-serif;
-    border: 3px solid black;    /* A borda preta em volta de tudo */
-}
-.Titulo_segundario{
-    background-color: rgb(34, 81, 10);
-    color: white;
-    text-align: center;
+.titulo_principal{                 /* Define a classe CSS chamada "titulo_principal", usada para estilizar o bloco do título principal */
+
+    background-color: darkgoldenrod;  /* Define uma cor de fundo dourada escura para o bloco */
+
+    color: white;                     /* Define a cor padrão do texto dentro do bloco como branco */
+
+    display: flex;                    /* Ativa o sistema Flexbox para organizar os elementos internos */
+
+    flex-direction: column;           /* Faz com que os elementos dentro da div fiquem empilhados verticalmente */
+
+    justify-content: center;          /* Centraliza os elementos verticalmente dentro do bloco */
+
+    align-items: center;              /* Centraliza os elementos horizontalmente dentro do bloco */
+
+    min-height: 150px;                /* Define que o bloco terá no mínimo 150 pixels de altura */
+
+    text-align: center;               /* Centraliza o texto dentro dos elementos */
+
+    line-height: 1;                   /* Define o espaçamento vertical entre linhas de texto */
+
+    padding-top: 30px;                /* Cria um espaço interno de 30px na parte superior do bloco */
+
+    -webkit-text-stroke: 2px black;   /* Cria um contorno preto de 2px nas letras (funciona principalmente em navegadores baseados em WebKit como Chrome) */
+
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto, usando Arial como primeira opção */
+
+    border: 3px dashed black;         /* Cria uma borda preta tracejada de 3px ao redor do bloco */
+
+    text-shadow: 2px 2px 5px black;   /* Cria uma sombra no texto (2px direita, 2px baixo, 5px de desfoque, cor preta) */
+
+    background: linear-gradient(90deg, darkgoldenrod, orange, gold); /* Cria um fundo em degradê horizontal com tons de dourado */
+
+    border-radius: 10px;              /* Arredonda os cantos da borda em 10px */
+
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* Cria uma sombra no bloco (5px direita, 5px baixo, 15px de desfoque, preto com transparência) */
+
+    transition: 0.3s;                 /* Define que mudanças visuais (como animações) acontecerão suavemente em 0.3 segundos */
 }
 
-figure {
-  display: flex;
-  flex-direction: column; /* Empilha a imagem e a legenda */
-  align-items: center;    /* Centraliza horizontalmente */
-  text-align: center;     /* Garante que o texto da legenda também centralize */
-  margin: 0 auto;         /* Centraliza o bloco da figure na página */
+.titulo_principal:hover{              /* Aplica um efeito quando o mouse passa sobre o bloco do título */
+
+    transform: scale(1.02);           /* Aumenta levemente o tamanho do bloco em 2% criando efeito de destaque */
 }
-img {
-  border: 2px solid black; /* Largura, Estilo (sólida) e Cor */
+
+.Titulo_segundario{                   /* Classe usada para estilizar títulos secundários como h2, h3, h4, etc */
+
+    background-color: rgb(34, 81, 10); /* Define um fundo verde escuro usando valores RGB */
+
+    color: white;                     /* Define a cor do texto como branco */
+
+    text-align: center;               /* Centraliza o texto desses títulos */
+}
+
+.titulo_principal h1{                 /* Seleciona especificamente o elemento h1 dentro da classe titulo_principal */
+
+    font-size: 40px;                  /* Define o tamanho da fonte do título principal como 40 pixels */
+
+    -webkit-text-stroke: 2px black;   /* Aplica um contorno preto de 2px nas letras do h1 */
+}
+
+.titulo_principal h3{                 /* Seleciona especificamente o elemento h3 dentro da classe titulo_principal */
+
+    font-size: 18px;                  /* Define o tamanho da fonte do subtítulo como 18 pixels */
+
+    -webkit-text-stroke: 1px black;   /* Aplica um contorno menor (1px) nas letras do subtítulo */
+}
+
+figure {                              /* Estiliza o elemento HTML <figure>, usado para imagens com legenda */
+
+  display: flex;                      /* Ativa o Flexbox dentro do figure */
+
+  flex-direction: column;             /* Faz a imagem e a legenda ficarem empilhadas verticalmente */
+
+  align-items: center;                /* Centraliza horizontalmente a imagem e a legenda */
+
+  text-align: center;                 /* Garante que o texto da legenda fique centralizado */
+
+  margin: 0 auto;                     /* Centraliza o bloco figure na página automaticamente */
+}
+
+img {                                 /* Estiliza todas as imagens da página */
+
+  border: 2px solid black;            /* Adiciona uma borda preta sólida de 2px ao redor das imagens */
+}
+
+img{
+  border: 2px solid black;
+  border-radius: 10px;   /* Arredonda os cantos da imagem */
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.4); /* Cria sombra */
 }
