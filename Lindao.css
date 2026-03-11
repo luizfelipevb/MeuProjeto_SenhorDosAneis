@@ -8,3 +8,14 @@
     color: white;
     text-align: center;
 }
+
+figure {
+  display: flex;
+  flex-direction: column; /* Empilha a imagem e a legenda */
+  align-items: center;    /* Centraliza horizontalmente */
+  text-align: center;     /* Garante que o texto da legenda também centralize */
+  margin: 0 auto;         /* Centraliza o bloco da figure na página */
+}
+img {
+  border: 2px solid black; /* Largura, Estilo (sólida) e Cor */
+}
